@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 366vh;">
+        <a href="variable.html">Variable</a>
+        <a href="conditionals.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="function.html">Function</a>
+        <a href="list.html">List</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a class="current-page" href="#">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          String Index
+        </div>
+        <textarea readonly style="height:200px;">
+You can access each character of a str by variable_name[index]
+
+x = "hello world"
+print(x[1])
+
+Result:
+e
+        </textarea>
+        <div class="label">
+          Converting String to List
+        </div>
+        <textarea readonly style="height:240px;">
+You can convert a str to a list by using list().
+
+For example,
+
+x = "hello world"
+y = list(x)
+print(y)
+
+Result:
+["h","e","l","l","o"," ","w","o","r","l","d"]
+        </textarea>
+        <div class="label">
+          Converting List to String
+        </div>
+        <textarea readonly style="height:240px;">
+You can convert a list to str by creating a str variable, and using the str_variable.join(list_variable) method.
+
+x = ["y","a","y"]
+y = ""
+y = y.join(x)
+print(y)
+
+Result:
+yay
+        </textarea>
+        <div class="label">
+          String Slice
+        </div>
+        <textarea readonly style="height:200px;">
+String Slice: Taking a part of a str, where variable_name[a:b] refers to index a to b-1
+
+x = "hello world"
+y = x[2:5]
+print(y)
+
+Result:
+"llo"
+        </textarea>
+        <div class="label">
+          String Split
+        </div>
+        <textarea readonly style="height:240px;">
+String Split: A str can be broken apart into a list by using split("...")
+
+Breaking apart a str at its spaces:
+
+x = "hello world"
+y = x.split("")
+print(y)
+
+Result:
+["hello","world"]
+        </textarea>
+        <div class="label">
+          Operators Shortcut
+        </div>
+        <textarea readonly style="height:320px;">
+You can simply from doing the following,
+
+x = x + 2
+x = x - 2
+x = x * 2
+x = x / 2
+x = x % 2
+
+To
+
+x += 2
+x -= 2
+x *= 2
+x /= 2
+x %= 2
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>

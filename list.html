@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 670vh;">
+        <a href="variable.html">Variable</a>
+        <a href="conditionals.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="function.html">Function</a>
+        <a class="current-page" href="#">List</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="string_methods.html">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          List
+        </div>
+        <textarea readonly style="height:760px;">
+There four main data types in Python, which are list, tuple, dictionary, and set.
+
+A list is a variable that can contain multiple values.
+
+A list is created by variable_name = []
+
+For example,
+
+x = []
+
+It can also be created with values.
+
+x = [1,2,3]
+
+A List can be a mix of different data types.
+
+x = [3.14,"hello",False]
+
+An item in a list can be accessed by variable_name[index], where the index starts at 0.
+
+For example,
+
+x = [3.14,"hello",False]
+print(x[1])
+
+Result:
+"hello"
+
+You can change a value in a list by variable_name[index] = new_value
+
+For example,
+
+x = [1,2,3]
+x[1] = 20
+
+#x is now [1,20,3]
+        </textarea>
+        <div class="label">
+          List Methods
+        </div>
+        <textarea readonly style="height:720px;">
+There are four most common methods for lists, which are append, pop, insert, remove.
+
+append(value) --> adds the value to the end of the list
+
+ex:
+x = [1,2]
+x.append(3)
+
+#x is now [1,2,3]
+
+pop() --> remove last value of the list
+
+ex:
+x = [1,2,3]
+x.pop()
+
+#x is now [1,2]
+
+insert(index,value) --> inserts the value into the specified index
+
+ex:
+x = ["hello","again"]
+x.insert(1,"there")
+
+#x is now ["hello","there","again"]
+
+remove(value) --> removes value from the list if the value exists in the list
+
+ex:
+x = ["hello","there","again"]
+x.remove("there")
+
+#x is now ["hello","again"]
+        </textarea>
+        <div class="label">
+          Length
+        </div>
+        <textarea readonly>
+You can find the length of the list through using the len() method.
+
+x = [1,2,3]
+y = len(x)
+
+#y is 3
+        </textarea>
+        <div class="label">
+          Copying List
+        </div>
+        <textarea readonly style="height:480px;">
+When you create a list and set another variable to equal it, changing one list will change the other.
+
+x = [1,2,3]
+y = x
+y[1] = 20
+print(x) --> [1,20,3]
+print(y) --> [1,20,3]
+
+You can think of the two variable pointing to the same list object stored in the computer
+x,y --> [1,2,3]
+
+In order to prevent this, you can copy the list using copy() method.
+
+x = [1,20,3]
+y = x.copy()
+y[1] = 20
+print(x) --> [1,2,3]
+print(y) --> [1,20,3]
+
+You can think of x and y now pointing to separate lists.
+x --> [1,2,3] / y --> [1,20,3]
+        </textarea>
+        <div class="label">
+          Looping through the List (print())
+        </div>
+        <textarea readonly style="height:600px;">
+In order to loop through the list, there are two ways.
+
+First Way:
+
+x = [1,2,3]
+for i in range(len(x)):
+  print(x[i])
+
+Result:
+1
+2
+3
+
+This is looping i from 0 to len(x)-1 and calling each value belonging to each index of the list.
+
+Second Way:
+
+x = [1,2,3]
+for num in x:
+  print(num)
+
+Result:
+1
+2
+3
+
+This is going through each value in list x and calling each of them num, which you can use inside the for loop.
+        </textarea>
+        <div class="label">
+          Looping and Changing Values in a List
+        </div>
+        <textarea readonly style="height:280px;">
+In order to change values in a list, only the first way of looping through the list can be used.
+(the second way will not alter the values in the list)
+
+x = [1,2,3]
+for i in range(len(x)):
+  x[i] = x[i]*10
+
+print(x)
+
+Result:
+[10,20,30]
+        </textarea>
+        <div class="label">
+          Sorting List
+        </div>
+        <textarea readonly style="height:200px;">
+The simplist way to sort a list from smallest to greatest values is using sort() method.
+
+x = [3,1,4,1,5]
+x.sort()
+print(x)
+
+Result:
+[1,1,3,4,5]
+        </textarea>
+        <div class="label">
+          Reversing List
+        </div>
+        <textarea readonly style="height:200px;">
+The simplist way to reverse alist is using [::-1]
+
+x = [1,2,3]
+x = x[::-1]
+print(x)
+
+Result:
+[3,2,1]
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea class="notepad" placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>

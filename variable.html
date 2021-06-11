@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 451vh;">
+        <a class="current-page" href="#">Variable</a>
+        <a href="conditionals.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="function.html">Function</a>
+        <a href="list.html">List</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="string_methods.html">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          Variable Declaration
+        </div>
+        <textarea readonly style="height: 200px;">
+In Python, a variable is created by assigning a value to a symbol.
+
+x = 10
+
+In Python, a comment can be by putting # sign
+
+#This is a comment
+        </textarea>
+        <div class="label">
+          Data Types
+        </div>
+        <textarea readonly style="height: 200px;">
+There are four basic data types in Python, which are int (integer), str (string), float (decimal), and bool (boolean: True or False)
+
+a = 10 #int
+b = "Bob" #str
+c = 3.14 #float
+d = True #bool
+        </textarea>
+        <div class="label">
+          Casting
+        </div>
+        <textarea readonly style="height: 400px;">
+In order to convert a data type to another, you surround the variable with type()
+For example,
+
+#Converting int to str
+
+x = 10
+y = str(s)
+
+#Converting str to int
+
+x = "10"
+y = int(x)
+
+#Converting float to int
+
+x = 3.14
+y = int(x)
+
+#This will round to float down to an integer
+        </textarea>
+        <div class="label">
+          Output
+        </div>
+        <textarea readonly style="height: 320px;">
+#print("...") will print out a statement
+
+print("hello world") --> hello world
+
+#Printing out a variable
+
+x = 10
+print(x) --> 10
+
+#Printing out variables within the print statement
+
+name = "Bob"
+age = 10
+print(f"My name is {name} and I am {age} years old")
+        </textarea>
+        <div class="label">
+          Input
+        </div>
+        <textarea readonly style="height: 360px;">
+#The following takes user input and save it into a variable
+
+x = input()
+
+#If the user inputs "hello", the x variable will be created with the value "hello"
+
+print(x) --> hello
+
+#User input is default str, which you can surround by int() to turn it into an integer
+
+x = int(input())
+
+#If user input was 10, x variable would be created with the value 10 as an integer
+        </textarea>
+        <div class="label">
+          Operators
+        </div>
+        <textarea readonly style="height: 640px;">
+In Python, there are six main operators.
++
+-
+* #multiply
+/ #divide
+** #power
+% #take remainder
+
+Here are examples:
+x = 2
+y = 3
+z = x + y --> 5
+z = x - y --> -1
+z = x * y --> 6
+z = x / y --> 0.666...
+z = x ** y #same as 2 to the power of 3 --> 8
+
+% operate by taking the remainder of the first number divided by the second number
+
+z = y % x #same as remainder of 3 divided by 2
+--> 1
+
++ and * signs can be used to put strings together as well
+
+x = "hello"
+y = " "
+z = "world"
+s = x + y + z --> "hello world"
+
+s = x * 3 --> "hellohellohello"
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea class="notepad" placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>

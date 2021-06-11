@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 420vh;">
+        <a href="variable.html">Variable</a>
+        <a href="conditionals.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a class="current-page" href="#">Function</a>
+        <a href="list.html">List</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="string_methods.html">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          Function Fundamentals
+        </div>
+        <textarea readonly>
+A function is like a box of code that you can call anytime.
+
+A function is composed of input, process, and output.
+
+input -> [process] -> output
+        </textarea>
+        <div class="label">
+          Basic Function
+        </div>
+        <textarea readonly style="height: 320px;">
+A function is created by
+def name():
+  ...code...
+
+And called by
+name()
+
+For example,
+
+def func_basic():
+  print("This is a function")
+
+func_basic()
+
+#This will execute the function and "This is a function" will be printed out
+        </textarea>
+        <div class="label">
+          Intermediate Function Example 1
+        </div>
+        <textarea readonly style="height: 520px;">
+This is a function with both input and output. Note that either of these are optional.
+
+def func(a,b):
+  return a+b
+
+x = func(1,2)
+
+print(x)
+
+Result:
+3
+
+Walkthrough of the code:
+
+a and b are the inputs of the function, which can be used within the function.
+
+return statement means that when the function is called with variable = function_name(...), the return value will be the initial value of the variable.
+
+Thus, x = func(1,2) is passing 1 as a and 2 as b into the function, which will add a and b together and return it to the variable as its value.
+        </textarea>
+        <div class="label">
+          Intermediate Function Example 2
+        </div>
+        <textarea readonly style="height: 280px;">
+def func(a,b):
+  sum = a + b
+  print(sum)
+
+c = 2
+d = 3
+func(c,d)
+
+Result:
+5
+
+Note that the variables you pass in the function does not need to be the variable names that are used inside the function.
+        </textarea>
+        <div class="label">
+          Scope
+        </div>
+        <textarea readonly style="height: 680px;">
+There are three main rules when using variables:
+
+1. Variables created inside if / elif / else statements or a function can only be used inside the statement / function.
+
+2. Variable created outside of if / elif / else statements or a function can be used everywhere.
+
+3. Variable cannot be used before it is created.
+
+Example 1:
+
+def func():
+  x = 10
+  print(x) --> works
+
+func()
+print(x) --> doesn't work
+
+Example 2:
+
+x = 10
+
+def func()
+  print(x) --> works
+
+func()
+print(x) --> works
+
+Example 3:
+
+print(x) --> doesn't work
+x = 10
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea class="notepad" placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>

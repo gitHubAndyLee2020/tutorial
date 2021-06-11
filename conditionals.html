@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 350vh;">
+        <a href="variable.html">Variable</a>
+        <a class="current-page" href="#">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="function.html">Function</a>
+        <a href="list.html">List</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="string_methods.html">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          if / elif / else
+        </div>
+        <textarea readonly style="height: 320px;">
+In Python, if / elif / else statements are used to check conditions.
+
+In a chain of statements, it must start with if statement, followed by optional elif statements, and end with optional else statement.
+
+elif statements are checked only if the if / elif statements before it are false.
+
+else statement is checked if all the statements before it are false.
+
+Structure --> if ..comparison...:
+                ...code to execute if the statement is true...
+        </textarea>
+        <div class="label">
+          Comparison Signs
+        </div>
+        <textarea readonly style="height:280px;">
+In Python, there are five comparison signs.
+== #equals
+>
+<
+>= #greater or equal to
+<= #less or equal to
+
+For example,
+
+print(2 == 2) --> True
+print(2 == "2") --> False
+print(2 < 3) --> True
+print(3 <= 3) --> True
+        </textarea>
+        <div class="label">
+          Example 1
+        </div>
+        <textarea readonly style="height:280px;">
+x = 10
+
+if x < 5:
+  print("Less than five")
+
+if x > 7:
+  print("Greater than seven")
+
+Result:
+"Greater than seven" is printed
+
+Both statements are checked, first statement is false, so it will not get printed, the second statement is true, so it will be printed.
+        </textarea>
+        <div class="label">
+          Example 2
+        </div>
+        <textarea readonly style="height: 360px;">
+x = "Bob"
+
+if x == "Jeff":
+  print("Hello Jeff")
+elif x == "Bob":
+  print("Hello Bob")
+elif x == "Andy":
+  print("Hello Andy")
+else:
+  print("I don't know who you are")
+
+Result:
+Hello Bob
+
+Since first statement is false, second statement is checked. Since second statement is true, third and last statements are not checked (because they are elid and else statements).
+        </textarea>
+        <div class="label">
+          Example 3
+        </div>
+        <textarea readonly style="height: 240px;">
+x = 10
+s = ""
+
+if x < 5:
+  s = "x is less than 5"
+else:
+  s = "x is greater or equal to 5"
+
+The value of s after execution is "x is greater or equal to 5", since x < 5 is false and the else statement will be executed.
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea class="notepad" placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>

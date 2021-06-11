@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/generale-station" type="text/css"/>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="current" href="index.html">LeeTech</a></li>
+      <li class="dropdown sidepage"><a href="#" onclick="menu()">Menu</a></li>
+      <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" rel="noopener noreferrer">Online Compiler</a></li>
+    </ul>
+    <div class="row">
+      <div class="column left" style="height: 418vh;">
+        <a href="variable.html">Variable</a>
+        <a href="conditionals.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="function.html">Function</a>
+        <a href="list.html">List</a>
+        <a class="current-page" href="#">Dictionary</a>
+        <a href="string_methods.html">String Methods</a>
+        <a href="next_step.html">Next Step</a>
+      </div>
+      <div class="column middle">
+        <div class="label">
+          Dictionary
+        </div>
+        <textarea readonly style="height:800px;">
+Dictionary is a data type that can store values that are paired to each other, which are referred to as key:value pair.
+
+You can create a dictionary by variable_name = {}
+
+For example,
+
+x = {}
+
+To create a dictionary with values,
+
+x = {"name":"Bob","age":12}
+
+Values in a dictionary can be accessed by variable_name[key]
+
+x = {"name":"Bob","age":12}
+print(x["name"])
+
+Result:
+Bob
+
+Values in a dictionary can be changed by variable_name[key] = new_value
+
+x = {"name":"Bob","age":12}
+x["age"] = 16
+print(x)
+
+Result:
+{"name":"Bob","age":16}
+
+Values can be inserted into a dictionary by variable_name[new_key] = new_value
+
+x = {}
+x["name"] = "Jeff"
+print(x)
+
+Result:
+{"name":"Jeff"}
+        </textarea>
+        <div class="label">
+          Converting Dictionary into List
+        </div>
+        <textarea readonly style="height:720px;">
+You can convert a dictionary into a list by using keys() / values() / items() to return keys / values / key-value pairs (respectively), and then use list() to convert them into a list
+
+For example,
+
+x = {1:"one",2:"two",3:"three"}
+
+y = list(x.keys())
+print(y)
+
+#y is [1,2,3]
+
+y = list(x.values())
+print(y)
+
+#y is ["one","two","three"]
+
+y = list(x.items())
+print(y)
+
+#y is [(1,"one"),(2,"two"),(3,"three")]
+
+() is a data type called tuple, which is similar to list, except that its size is fixed and the values cannot be changed.
+
+To access each value in a list of tuples, variable_name[index_in_list][index_in_tuple]
+
+For example,
+
+x = [(1,"one"),(2,"two"),(3,"three")]
+print(x[1][0])
+
+Result:
+2
+        </textarea>
+        <div class="label">
+          Looping through Dictionary
+        </div>
+        <textarea readonly style="height:600px;">
+Best way to loop through a dictionary is to convert it into a list.
+
+x = {1:"one",2:"two",3:"three"}
+
+Looping through the Keys:
+
+for key in list(x.keys()):
+  print(key)
+
+Result:
+1
+2
+3
+
+for value in list(x.values()):
+  print(value)
+
+Result:
+"one"
+"two"
+"three"
+
+for item in list(x.values()):
+  print(item)
+
+Result:
+(1,"one")
+(2,"two")
+(3,"three")
+        </textarea>
+        <div class="label note">
+          Notepad
+        </div>
+        <textarea class="notepad" placeholder="Type in your notes here."></textarea>
+        <div class="label instruction">
+          Click the upper-right corner to open up the online compiler gdb, where you can test out your code.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tutorial.js"></script>
+</html>
